@@ -1,0 +1,290 @@
+/* Підключення шрифта (не видаляти) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    margin: 0px;
+    /* забираємо стандартні відступи в тега body */
+    font-family: "Inter", sans-serif;
+
+}
+
+
+header {
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px 110px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+
+.logo {
+    width: 89px;
+    height: 66px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.menu-elements {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 93%;
+    text-transform: uppercase;
+    color: #000;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.hero-section {
+
+    border-radius: 32px;
+    padding: 40px;
+    max-width: 1200px;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #d3e9ff top center / 100% no-repeat url(https://api.logikaschool.com.ua/media/library/44b094a8_phone_background.png);
+}
+
+
+.cta-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 145%;
+    color: #000;
+    max-width: 460px;
+}
+
+.cta-button {
+    border: 1px solid #000;
+    border-radius: 200px;
+    width: 305px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #000;
+    background: #d3e9ff;
+}
+
+
+.products-title {
+
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 125%;
+    text-align: center;
+    color: #000;
+}
+
+.card {
+    border: 1px solid #000;
+    border-radius: 32px;
+    padding: 20px;
+    width: 280px;
+    box-sizing: border-box;
+}
+
+.title-card {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 125%;
+    color: #000;
+}
+
+.price-card {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 108%;
+    color: #645fd3;
+}
+
+
+.products-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contact-section {
+    background: #d3e9ff;
+    border-radius: 16px;
+    padding: 43px 0px;
+    max-width: 1200px;
+    text-align: center;
+    margin: 43px auto;
+
+}
+
+.contact-text {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 125%;
+    color: #000;
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.input-phone {
+    border: 1px solid #000;
+    border-radius: 54px 0 0 54px;
+    padding: 0 23px;
+    width: 270px;
+    height: 50px;
+    background: #d3e9ff;
+}
+
+.submit-button {
+    border-radius: 0 200px 200px 0;
+    width: 130px;
+    height: 50px;
+    background: #000;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: #fff;
+    padding: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-between;
+    padding: 40px 120px;
+
+    min-height: 200px;
+
+    background: #F8F9FA;
+}
+
+.footer-menu {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-end;
+    padding: 0px;
+    gap: 40px;
+
+}
+
+.vert-menu {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+
+}
+
+.footer-elements-first {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0;
+    color: #000000;
+}
+
+.footer-elements {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Menu items hover */
+.menu-elements {
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-elements:hover {
+    color: #007bff;
+    transform: translateY(-2px);
+}
+
+/* CTA button hover */
+.cta-button {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    color: fff;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+}
+
+/* Product cards hover */
+.card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.img-card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .title-card {
+    color: #007bff;
+}
+
+.title-card {
+    transition: color 0.3s ease;
+}
+
+/* Submit button hover */
+.submit-button {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
